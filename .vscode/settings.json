@@ -1,0 +1,38 @@
+{
+  // Use Prettier as the default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Format files when saving
+  "editor.formatOnSave": true,
+
+  // Enable code actions on save to auto-fix ESLint issues
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Ensure that files use the proper line endings (LF is standard for most teams)
+  "files.eol": "\n",
+
+  // Use 2 spaces for indentation
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // Enable TypeScript and JavaScript validation (helps catch errors early)
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": true,
+
+  // Show ESLint errors in the Problems panel
+  "eslint.alwaysShowStatus": true,
+
+  // Optional: Ignore formatting for generated files or build directories
+  "[jsonc]": {
+    "editor.defaultFormatter": null
+  },
+
+  // Recommended extensions for a TypeScript/ESLint/Prettier workspace:
+  // - ESLint (dbaeumer.vscode-eslint)
+  // - Prettier – Code formatter (esbenp.prettier-vscode)
+  // - GitLens (eamodio.gitlens) for git insights
+  // - Better Comments (aaron-bond.better-comments)
+  "extensions.ignoreRecommendations": false
+}
