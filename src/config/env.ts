@@ -13,7 +13,7 @@ const envSchema = z.object({
     .default(5500)
     .describe('The port the application will run on'),
   NODE_ENV: z
-    .string()
+    .enum(['development', 'production'])
     .default('development')
     .describe('The environment the application is running in'),
   DB_URI: z.string().url().describe('The URI for the database connection'),
